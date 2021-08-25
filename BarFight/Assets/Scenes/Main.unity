@@ -318,10 +318,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1043620047315809739, guid: b62590c1e15415c43bbe7b783e2be526, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2880995474724968029, guid: b62590c1e15415c43bbe7b783e2be526, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 254074487}
+    - target: {fileID: 8399214604569230327, guid: b62590c1e15415c43bbe7b783e2be526, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8399214604672120796, guid: b62590c1e15415c43bbe7b783e2be526, type: 3}
       propertyPath: m_Name
       value: Cameras
