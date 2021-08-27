@@ -10,6 +10,9 @@ namespace BarFight
         public Action<CharacterStance> OnEnteredStance;
         public Action<CharacterStance> OnLeftStance;
 
+        public FightingMove Punch;
+        public FightingMove Kick;
+
         private CharacterStance stance;
         public CharacterStance Stance
 		{

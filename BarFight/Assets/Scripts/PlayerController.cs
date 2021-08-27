@@ -4,24 +4,12 @@ using UnityEngine;
 
 namespace BarFight
 {
-    [RequireComponent(typeof(MovingController), typeof(FightingController))]
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : Fighter
     {
-		public FightingMove Punch;
-
-        private MovingController movingController;
-		private FightingController fightingController;
-
-		private void Awake ()
-		{
-			movingController = GetComponent<MovingController>();
-			fightingController = GetComponent<FightingController>();
-		}
-
 		private void Update ()
 		{
 			if (Input.GetKeyDown(KeyCode.J))
-				fightingController.ExecuteMove(Punch);
+				fightingController.ExecuteMove(fightingController.Punch);
 		}
 
 		private void FixedUpdate ()

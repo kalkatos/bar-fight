@@ -1,31 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5099216118248546628
+--- !u!114 &6683378459486618684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6227892552406062121}
+  m_GameObject: {fileID: 2401227222995029198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a241efd8e6c8ae84a822865f3ab907ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 08b9382c596515442b96a41f79cc71a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1104509642502708618
+  findEnemyDelay: 1
+  startFightDelay: 1
+  targetDistance: 1
+--- !u!1001 &8677087941848532333
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6429428246980884123, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429428246980884123, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43867922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429428246980884123, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6429428248440523168, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6429428248440523168, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 6429428248440523168, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -65,12 +80,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6429428248440523171, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
       propertyPath: m_Name
-      value: PlayerCharacter
+      value: EnemyCharacter
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
---- !u!1 &6227892552406062121 stripped
+--- !u!1 &2401227222995029198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6429428248440523171, guid: 1e3a045d733f56b418c428255b06374d, type: 3}
-  m_PrefabInstance: {fileID: 1104509642502708618}
+  m_PrefabInstance: {fileID: 8677087941848532333}
   m_PrefabAsset: {fileID: 0}
