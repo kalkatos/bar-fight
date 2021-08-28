@@ -26,7 +26,7 @@ namespace BarFight
 				{
 					if (Mathf.Abs(hits[i].transform.position.z - transform.position.z) < maxDepth)
 					{
-						Debug.Log("Hit " + hits[i].collider.name);
+						Debug.Log($"Hit {hits[i].collider.name} - normal: {hits[i].normal} - point: {hits[i].point} - distance: {hits[i].distance}");
 					}
 				}
 			}
