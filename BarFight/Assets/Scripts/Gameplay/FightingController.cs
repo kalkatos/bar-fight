@@ -9,9 +9,9 @@ namespace BarFight
     {
         public Action<CharacterStance> OnEnteredStance;
         public Action<CharacterStance> OnLeftStance;
+        public Action<string> OnMoveExecuted; //string moveId
 
         public FightingMove Punch;
-        public FightingMove Kick;
 
         private CharacterStance stance;
         public CharacterStance Stance
@@ -30,6 +30,7 @@ namespace BarFight
         public void ExecuteMove (FightingMove move)
         {
             move.Execute();
+            OnMoveExecuted?.Invoke(move.Id);
         }
     }
 

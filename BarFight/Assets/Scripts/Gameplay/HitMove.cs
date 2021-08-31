@@ -9,15 +9,11 @@ namespace BarFight
         public CharacterStance AllowedHitStances;
 		public ContactFilter2D Filter;
 		public float maxDepth;
-		public GameObject effect;
 
 		private RaycastHit2D[] hits = new RaycastHit2D[10];
 
         public override void Execute ()
 		{
-			//Visual
-			effect.SetActive(true);
-			Invoke("Deactivate", Time);
 			//Hit
             int hitAmount = HitBox.Cast(Vector2.zero, Filter, hits, 0.1f);
             if (hitAmount > 0)
@@ -30,11 +26,6 @@ namespace BarFight
 					}
 				}
 			}
-		}
-
-		private void Deactivate ()
-		{
-			effect.SetActive(false);
 		}
 	}
 }

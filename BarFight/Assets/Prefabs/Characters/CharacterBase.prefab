@@ -282,7 +282,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Punch: {fileID: 412198682103670996}
-  Kick: {fileID: 412198682103670996}
 --- !u!210 &1380550044264476908
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -348,6 +347,10 @@ PrefabInstance:
     - target: {fileID: 7298280473745217688, guid: 8d11225a4e435884f82efc98063f7dd6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459788341450192512, guid: 8d11225a4e435884f82efc98063f7dd6, type: 3}
+      propertyPath: Id
+      value: punch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d11225a4e435884f82efc98063f7dd6, type: 3}
